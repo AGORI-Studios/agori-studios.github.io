@@ -1,13 +1,22 @@
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--bootstrap js-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<meta content="AGORI" property="og:title">
+<meta content="AGORI" name="twitter:title">
+<meta content="Official AGORI website." property="og:description">
+<meta content="Official AGORI website." name="twitter:description">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<head>
+    <!--Bootstrap css & js-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/4f3f0fdd2c.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -27,56 +36,27 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<!--in the center of the screen, load "assets/agori_dev.png" (height and width)-->
+<body id="preview">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">AGORI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarNavAltMarkup" style="">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="portfolio/iditvsidit.html">IditVsIdit's Portfolio</a>
+          </div>
+        </div>
+    </nav>
 
-<!--make a typing animation for "Agori<newline>Website coming soon..." w/ js-->
-<!--AGORI will be a heading 1-->
-<!--Blinking cursor at the end-->
-<style>
-    #just-line-break {
-        white-space: pre-line;
-    }
-
-    /* center */
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-</style>
-<script>
-    $(document).ready(function() {
-        var text = "Agori\nWebsite coming soon...";
-        var i = 0;
-        var speed = 50;
-
-        function type() {
-            if (i < text.length) {
-                document.getElementById("text").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-
-        type();
-    });
-
-</script>
-
-
-<body>
-    <div class="center">
-        <img src="assets/agori_dev.png" alt="Agori" />
-
-        <div id="center">
-            <div class="row">
-                <div class="col-md-12">
-                    <!--center div-->
-                    <div id="just-line-break">
-                        <h1 id="text"></h1>
-                    </div>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center">
+                <h1>Website in progress...</h1>
+                <p>Check back later!</p>
+            </div>
             </div>
         </div>
     </div>
