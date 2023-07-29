@@ -1,0 +1,9 @@
+#discord {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(13%) saturate(1571%) hue-rotate(190deg) brightness(94%) contrast(100%);;
+}
+
+.username {
+    display: inline-block;
+    font-size: 0px;
+    color: #000
+}
