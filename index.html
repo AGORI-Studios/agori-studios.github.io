@@ -38,6 +38,9 @@
     <!-- Google Ads (I'm so sorry :()-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1303526547147350"
      crossorigin="anonymous"></script>
+
+     <!--load css/index.css-->
+      <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body id="preview">
@@ -49,20 +52,155 @@
         <div class="navbar-collapse collapse show" id="navbarNavAltMarkup" style="">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home</a>
-            <a class="nav-item nav-link" href="portfolio/iditvsidit.html">IditVsIdit's Portfolio</a>
-            <a class="nav-item nav-link" href="portfolio/guglioisstupid.html">GuglioIsStupid's Portfolio</a>
+            <div class="dropdown">
+              <a class="nav-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Portfolios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="portfolio/iditvsidit.html">IditVsIdit's Portfolio</a>
+                <a class="dropdown-item" href="portfolio/guglioisstupid.html">GuglioIsStupid's Portfolio</a>
+              </div>
           </div>
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text-center">
-                <h1>Website in progress...</h1>
-                <p>Check back later!</p>
-            </div>
-            </div>
+    <div id="announcements">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Announcement!</strong> This website is still under development. Please report any bugs to the developers.
+            <!--when X button is pressed, make it tween into the topbar disappearing-->
+            <script>
+              function announcementClosed() {
+                /* 
+                #announcementsTab {
+    border-radius: 25px;
+    border: 2px solid #733bed;
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+    float: right;
+    overflow-y: hidden; 
+    position: fixed; 
+    right: 10px; 
+    top: 120px; 
+    background-color: #f1f1f1; 
+    padding: 10px;
+}
+
+#leftTab {
+    border-radius: 25px;
+    border: 2px solid #733bed;
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+    float: left;
+    overflow-y: hidden; 
+    position: fixed; 
+    left: 10px; 
+    top: 120px; 
+    background-color: #f1f1f1; 
+    padding: 10px;
+}
+
+#mainContent {
+    border-radius: 10px;
+    border: 2px solid #733bed;
+    padding: 20px;
+    width: 48%;
+    height: 85%;
+    float: center;
+    overflow-y: scroll;
+    position: fixed;
+    left: 26%;
+    top: 120px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+*/
+
+// change top: 120px; to top: 100px; and change height: 85%; to height: 100%; with a transition of 0.5s
+
+                document.getElementById('announcementsTab').style.transition = "0.5s";
+                document.getElementById('announcementsTab').style.top = "78px";
+                
+                document.getElementById('leftTab').style.transition = "0.5s";
+                document.getElementById('leftTab').style.top = "78px";
+
+                document.getElementById('mainContent').style.transition = "0.5s";
+                document.getElementById('mainContent').style.top = "78px";
+                document.getElementById('mainContent').style.height = "89.4%";
+
+                document.getElementById('announcements').style.display = 'none';
+              }
+            </script>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="announcementClosed();">
+
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </div>
+
+    <!--Create an (empty) announcements tab on the right hand screen that will be modified from a js piece of code-->
+    <!--ignoring all empty lines or lines that start with # and add it to the tab-->
+    <!--Lines go DD/MM/YYYY | <message>-->
+      <!--And disable scrolling this off the screen! and hide the scrollbar-->
+    <br>
+    <div id = "announcementsTab">
+      <h3>Announcements</h3>
+      <!--make a line-->
+      <hr>
+      <!--Create a rounded rectangle-->
+      <script>
+        function readAnnouncements() {
+          var announcements = `# Lines that start with # are ignored (Or lines that are empty)
+# format must start with DD/MM/YYYY | <message>
+# example:
+# 01/01/2023 | Happy New Year!
+
+02/08/2023 | Announcements tab is now available! Expect more updates soon!
+
+`;
+          var lines = announcements.split("\n");
+          var date = new Date();
+          var currentDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+          var announcementsTab = document.getElementById("announcementsTab");
+
+          for (var i = 0; i < lines.length; i++) {
+            if (lines[i].charAt(0) != "#" && lines[i] != "") {
+              var announcement = lines[i].split("|");
+              var announcementDate = announcement[0].trim();
+              var announcementMessage = announcement[1].trim();
+
+              // Display message in a rounded rectangle as date - message
+              announcementsTab.innerHTML += `
+              <!--Do not make an alert div, make it a normal div that is customisable-->
+              <div id="announcement">
+                <strong>${announcementDate}</strong> -- ${announcementMessage}
+              </div>
+              `;
+            }
+          }
+        }
+
+        readAnnouncements();
+        
+      </script>
+    </div>
+
+    <div id="leftTab">
+      <h3>Placeholder.</h3>
+      <hr>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+
+    <!--Create a main content div which will only affect the middle, it is 50% of the screen (25% for left, 25% for right)-->
+    <div id="mainContent">
+      <h3>Placeholder.</h3>
+      <hr>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+    
 </body>

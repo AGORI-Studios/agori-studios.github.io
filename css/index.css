@@ -1,0 +1,70 @@
+/* modify div id announcementsTab */
+#announcementsTab {
+    border-radius: 25px;
+    border: 2px solid #733bed;
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+    float: right;
+    overflow-y: hidden; 
+    position: fixed; 
+    right: 10px; 
+    top: 120px; 
+    background-color: #f1f1f1; 
+    padding: 10px;
+}
+
+#leftTab {
+    border-radius: 25px;
+    border: 2px solid #733bed;
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+    float: left;
+    overflow-y: hidden; 
+    position: fixed; 
+    left: 10px; 
+    top: 120px; 
+    background-color: #f1f1f1; 
+    padding: 10px;
+}
+
+#mainContent {
+    border-radius: 10px;
+    border: 2px solid #733bed;
+    padding: 20px;
+    width: 48%;
+    height: 85%;
+    float: center;
+    overflow-y: scroll;
+    position: fixed;
+    left: 26%;
+    top: 120px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+#mainContent::-webkit-scrollbar {
+    width: 12px;
+}
+
+#mainContent::-webkit-scrollbar-track {
+    background: #b14bff3e;
+    -webkit-box-shadow: inset 0 0 6px rgba(138, 60, 255, 0.3); 
+    border-radius: 10px;
+}
+
+#mainContent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* set color of scrollbar thumb */
+    background-color: #925fff;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* make it work with firefox */
+#mainContent {
+    scrollbar-width: thin;
+    scrollbar-color: #925fff #b14bff3e;
+}

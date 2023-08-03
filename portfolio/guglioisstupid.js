@@ -40,7 +40,7 @@ function Tooltip(e) {
             text-align: left;
             font-size: 16px;
             opacity: 1;
-            /* Draw a text backdrop (NOT A BORDER*/
+            /* Draw a text backdrop (NOT A BORDER)*/
             
 
             transition: 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
