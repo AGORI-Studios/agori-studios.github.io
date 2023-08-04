@@ -1,9 +1,20 @@
 #discord {
-    filter: brightness(0) saturate(100%) invert(55%) sepia(13%) saturate(1571%) hue-rotate(190deg) brightness(94%) contrast(100%);;
+    filter: brightness(0) saturate(100%) invert(55%) sepia(13%) saturate(1571%) hue-rotate(190deg) brightness(94%) contrast(100%);
 }
 
 .username {
     display: inline-block;
     font-size: 0px;
-    color: #000
+    color: #000;
+}
+
+#twitter-timeline {
+    overflow-y: scroll;
+    border-radius: 10px;
+    height: 640px;
+    width: 75%;
+    border: 1px solid #9500ff;
+    /* center the box */
+    margin-left: auto;
+    margin-right: auto;
 }

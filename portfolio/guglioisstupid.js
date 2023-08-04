@@ -136,7 +136,7 @@ function Tooltip(e) {
         }, maxTimer);
 
         // log the click count
-        console.log(clickCount[id]);
+        //console.log(clickCount[id]);
                 
     }
 

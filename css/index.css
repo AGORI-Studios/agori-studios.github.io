@@ -8,7 +8,6 @@
     overflow: hidden;
     float: right;
     overflow-y: hidden; 
-    position: fixed; 
     right: 10px; 
     top: 120px; 
     background-color: #f1f1f1; 
@@ -24,7 +23,6 @@
     overflow: hidden;
     float: left;
     overflow-y: hidden; 
-    position: fixed; 
     left: 10px; 
     top: 120px; 
     background-color: #f1f1f1; 
@@ -37,13 +35,16 @@
     padding: 20px;
     width: 48%;
     height: 85%;
-    float: center;
-    overflow-y: scroll;
-    position: fixed;
     left: 26%;
     top: 120px;
     background-color: #f1f1f1;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    /* make it work with firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #925fff #b14bff3e;
 }
 
 #mainContent::-webkit-scrollbar {
