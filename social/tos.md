@@ -28,7 +28,7 @@ You agree to follow the guidelines listed below. If you do not follow the guidel
 -   Do not post anything that is threatening. This is only allowed if its a joking manner.
 -   Parody accounts are allowed. We will not remove a parody account unless it is impersonating someone else.
 -   Parody is not the same as impersonation. Impersonation is not allowed.
--   Impersonation is pretending to be someone else. This includes using their name, profile picture, or any other information that could be used to identify them.
+-   Impersonation is pretending to be someone else. This includes using their name, profile picture, or any other information that could be used to identify them. You will be banned for impersonating AGORI members especially.
 -   Pornography is not allowed under any circumstances.
 -   Do not post anything that is spam. This includes posting the same thing multiple times, posting the same thing in multiple places, or posting something that is not relevant to the topic.
 -   Please be respectful of others. This includes not harassing others, not threatening others, and not insulting others.
